@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html><head>
+<script>window.__resources = {"logoWhite": "assets/img/logo-white.png", "logoBlack": "assets/img/logo-black.png", "wordmarkBlack": "assets/img/wordmark-black.png", "wordmarkWhite": "assets/img/wordmark-white.png", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/js/react.production.min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/js/react-dom.production.min.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="assets/js/dc-runtime.js"></script>
+
+
+
+
+</head>
+<body>
+
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-04.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-05.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/font-06.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-04.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-05.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/font-06.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-01.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-02.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-03.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-04.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-05.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/fonts/font-06.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; background: #14201f; }
+  a { color: #2b5f5c; text-decoration: none; }
+  a:hover { color: #17403d; }
+  :root {
+    --serif: "Source Serif 4", Georgia, serif;
+    --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="assets/js/deck-stage.js#/deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+  <!-- 01 · COVER -->
+  <section data-label="Cover" data-speaker-notes="This is the updated brand book: the argument, the naming system, the voice, and the apparel line as it stands on purakai.com today." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; justify-content: space-between; padding: 90px 110px 70px;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <img src="assets/img/image-03.png" alt="PuraKai" style="height: 54px; object-fit: contain;">
+      <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #6b6a63;">Brand Book · 2026</div>
+    </div>
+    <div>
+      <div style="font-family: var(--serif); font-size: 130px; line-height: 1.04; font-weight: 500; letter-spacing: -0.01em; max-width: 1350px;">Natural fiber, plainly made.</div>
+      <div style="font-size: 34px; line-height: 1.5; color: #4a4943; margin-top: 44px; max-width: 980px;">The brand argument, the naming system, the voice, and the apparel line — a short book for everyone who writes, designs, promotes, or sells for PuraKai.</div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid #d8d5cc; padding-top: 28px;">
+      <div style="font-family: var(--serif); font-size: 32px; font-style: italic; color: #2b5f5c;">Live Pure. Wear Pure.</div>
+      <div style="font-size: 22px; letter-spacing: 0.14em; text-transform: uppercase; color: #6b6a63;">Made by Nature since 2012 · 10 miles of LA · GOTS fiber · PFAS-free tested</div>
+    </div>
+  </section>
+
+  <!-- CONTENTS -->
+  <section data-label="Contents" data-speaker-notes="Read it in order once, then use it as a reference." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 100px 110px 80px;">
+    <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 26px;">Contents</div>
+    <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 70px;">Read it in order once, then use it as a reference.</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; flex: 1; align-content: center; margin-bottom: 60px;">
+      <div style="border-top: 2px solid #1c1c19; padding-top: 26px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; color: #2b5f5c; font-weight: 700;">01 — 02</div>
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">The Brand</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #4a4943;">The mission, the thesis, and the customer we speak to.</div>
+      </div>
+      <div style="border-top: 2px solid #1c1c19; padding-top: 26px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; color: #2b5f5c; font-weight: 700;">03 — 04</div>
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">The System</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #4a4943;">The core contrast, the two fabric families, and the supply chain.</div>
+      </div>
+      <div style="border-top: 2px solid #1c1c19; padding-top: 26px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; color: #2b5f5c; font-weight: 700;">05 — 06</div>
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">The Apparel &amp; Voice</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #4a4943;">The line as sold today, fabric care, and the lines we don’t cross.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · MISSION -->
+  <section data-label="Mission" data-speaker-notes="The mission beyond the fabric: transparency, environmental stewardship, and the ocean. Each purchase supports ocean conservation, clean water access, and education programs." style="color: #f0eee7; font-family: var(--sans); display: flex; flex-direction: column; justify-content: flex-end; padding: 90px 110px 70px; background: #14201f;">
+    <img src="assets/img/image-16.jpg" alt="Ocean" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20,32,31,0.25) 0%, rgba(20,32,31,0.88) 78%);"></div>
+    <div style="position: relative; display: flex; flex-direction: column; gap: 34px;">
+      <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #8fb5ae;">The Mission</div>
+      <div style="font-family: var(--serif); font-size: 76px; font-weight: 500; line-height: 1.12; max-width: 1450px;">Built on transparency, environmental stewardship, and an enduring love for our ocean playground.</div>
+      <div style="display: flex; gap: 60px; border-top: 1px solid rgba(240,238,231,0.3); padding-top: 30px; align-items: baseline;">
+        <div style="font-size: 27px; line-height: 1.5; color: #e6e4db;">1% of sales donated since 2012</div>
+        <div style="font-size: 27px; line-height: 1.5; color: #e6e4db;">Ocean conservation</div>
+        <div style="font-size: 27px; line-height: 1.5; color: #e6e4db;">Clean water access</div>
+        <div style="font-size: 27px; line-height: 1.5; color: #e6e4db;">Education for underserved communities</div>
+        <div style="font-size: 22px; color: #8fb5ae; margin-left: auto;">Source: <a href="https://purakai.com/pages/our-story" target="_blank" style="color: #8fb5ae; text-decoration: underline;">purakai.com/pages/our-story</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · THE BRAND -->
+  <section data-label="The Brand" data-speaker-notes="Functional argument, not lifestyle. The customer already lives clean — the garment is the missing piece." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 100px 110px 80px;">
+    <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 26px;">01 · The Brand</div>
+    <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 60px;">Natural fiber, close to the source.</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 90px; flex: 1; align-items: stretch;">
+      <div style="display: flex; flex-direction: column; gap: 34px; justify-content: center;">
+        <div style="font-size: 32px; line-height: 1.55; color: #33322d;">PuraKai makes natural-fiber activewear and basics. Every body-fabric garment is GOTS-certified organic cotton, third-party tested PFAS-free, and knit, cut, sewn, and dyed within a 10-mile radius in Los Angeles.</div>
+        <div style="font-size: 32px; line-height: 1.55; color: #33322d;">The cotton is grown and spun in India, where GOTS supply-chain infrastructure exists — then finished in LA, where US labor and environmental law takes over.</div>
+        <div style="font-size: 32px; line-height: 1.55; color: #33322d;">The brand exists to move people from petroleum-based fabrics to natural ones. The argument is functional, not lifestyle — and every name, every line of copy carries it.</div>
+      </div>
+      <div style="background: #14201f; color: #f0eee7; padding: 60px 64px; display: flex; flex-direction: column; justify-content: center; gap: 28px;">
+        <div style="font-size: 22px; letter-spacing: 0.18em; text-transform: uppercase; color: #8fb5ae;">The customer we speak to</div>
+        <div style="font-family: var(--serif); font-size: 42px; line-height: 1.25; font-weight: 500;">They eat clean. They train clean. They read labels. Then they spend sixteen hours a day in plastic.</div>
+        <div style="font-size: 27px; line-height: 1.55; color: #c2c8bf;">Frame PuraKai as the completion of a lifestyle the customer already lives — never a new habit to adopt.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · THE CORE CONTRAST -->
+  <section data-label="The Core Contrast" data-speaker-notes="Never overclaim. The honest footnote is part of the argument: labels and elastic aren't cotton; PureFlex has 8% spandex." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 100px 110px 80px;">
+    <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 26px;">02 · The Core Contrast</div>
+    <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 54px;">Synthetic vs. natural, honestly told.</div>
+    <div style="display: grid; grid-template-columns: 300px 1fr 1fr; font-size: 27px; line-height: 1.4; border-top: 2px solid #1c1c19; flex: 1; align-content: start;">
+      <div style="padding: 22px 0; border-bottom: 1px solid #d8d5cc; color: #6b6a63;"></div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc; font-weight: 700; color: #6b6a63;">Synthetic fabric</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc; font-weight: 700; color: #2b5f5c;">Organic cotton · PuraKai</div>
+      <div style="padding: 22px 0; border-bottom: 1px solid #d8d5cc; font-weight: 700;">Breathability</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc; color: #4a4943;">Traps heat and moisture against skin.</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc;">Breathes — releases heat as you move and rest.</div>
+      <div style="padding: 22px 0; border-bottom: 1px solid #d8d5cc; font-weight: 700;">Chemistry</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc; color: #4a4943;">Can carry PFAS and petroleum residues.</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc;">Third-party tested PFAS-free.</div>
+      <div style="padding: 22px 0; border-bottom: 1px solid #d8d5cc; font-weight: 700;">End of life</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc; color: #4a4943;">Sheds microplastics every wash.</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc;">Biodegrades where it’s organic cotton.</div>
+      <div style="padding: 22px 0; border-bottom: 1px solid #d8d5cc; font-weight: 700;">Wear over time</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc; color: #4a4943;">Pills, stretches out, thins.</div>
+      <div style="padding: 22px 24px; border-bottom: 1px solid #d8d5cc;">Softens with wear.</div>
+      <div style="padding: 22px 0; font-weight: 700;">Composition</div>
+      <div style="padding: 22px 24px; color: #4a4943;">Always a blend, rarely disclosed plainly.</div>
+      <div style="padding: 22px 24px;">100% organic cotton (Pure) · 92% organic cotton / 8% spandex (PureFlex).</div>
+    </div>
+    <sc-if value="{{ footnoteSubtle }}" hint-placeholder-val="{{ true }}">
+      <div style="font-size: 21px; color: #6b6a63; margin-top: 30px; line-height: 1.5;">Honest footnote — satin labels and waistband elastic are not cotton. We never claim <em>“plastic-free”</em> or <em>“zero microplastics.”</em> Dramatically more plant, dramatically less petroleum, than anything else on the rack.</div>
+    </sc-if>
+    <sc-if value="{{ footnoteEmphasized }}" hint-placeholder-val="{{ false }}">
+      <div style="margin-top: 30px; background: #14201f; color: #f0eee7; padding: 26px 34px; display: flex; gap: 28px; align-items: baseline;">
+        <div style="font-size: 22px; letter-spacing: 0.16em; text-transform: uppercase; color: #8fb5ae; white-space: nowrap;">Honest footnote</div>
+        <div style="font-size: 23px; line-height: 1.5; color: #e6e4db;">Satin labels and waistband elastic are not cotton. We never claim <em>“plastic-free”</em> or <em>“zero microplastics.”</em> Dramatically more plant, dramatically less petroleum, than anything else on the rack.</div>
+      </div>
+    </sc-if>
+  </section>
+
+  <!-- 04 · TWO FAMILIES -->
+  <section data-label="Two Families" data-speaker-notes="PureFlex replaces the legacy EcoFlex 2.0 name. Family name first, silhouette last. Every name threads back to Pura — pure." style="background: #14201f; color: #f0eee7; font-family: var(--sans); display: flex; flex-direction: column; padding: 100px 110px 80px;">
+    <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #8fb5ae; margin-bottom: 26px;">03 · The Naming System</div>
+    <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 30px;">Two families. One word.</div>
+    <div style="font-size: 30px; color: #c2c8bf; margin-bottom: 56px;">Family name first, silhouette last: <span style="font-family: var(--serif); font-style: italic; color: #f0eee7;">[Pure or PureFlex] + [optional modifier] + [silhouette]</span> — as in PureFlex High-Waist Legging.</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; flex: 1;">
+      <div style="border: 1px solid #3a504c; padding: 56px 60px; display: flex; flex-direction: column; gap: 24px;">
+        <div style="font-family: var(--serif); font-size: 58px; font-weight: 500;">Pure.</div>
+        <div style="font-size: 26px; letter-spacing: 0.12em; text-transform: uppercase; color: #8fb5ae;">100% organic cotton · GOTS fiber · no spandex</div>
+        <div style="font-size: 28px; line-height: 1.55; color: #c2c8bf;">Tees, tanks, lounge, joggers, tank dresses.</div>
+        <div style="font-family: var(--serif); font-size: 33px; font-style: italic; line-height: 1.4; margin-top: auto;">“Pure organic cotton. No blend. No compromise.”</div>
+      </div>
+      <div style="border: 1px solid #3a504c; padding: 56px 60px; display: flex; flex-direction: column; gap: 24px;">
+        <div style="font-family: var(--serif); font-size: 58px; font-weight: 500;">PureFlex.</div>
+        <div style="font-size: 26px; letter-spacing: 0.12em; text-transform: uppercase; color: #8fb5ae;">92% organic cotton · 8% spandex · replaces “EcoFlex 2.0”</div>
+        <div style="font-size: 28px; line-height: 1.55; color: #c2c8bf;">Leggings, shorts, bras, camis, racers, compression. Two constructions: 12.5 oz double-lined tops, 14.8 oz single-layer bottoms.</div>
+        <div style="font-family: var(--serif); font-size: 33px; font-style: italic; line-height: 1.4; margin-top: auto;">“The only stretch activewear that’s still mostly plant, not petroleum.”</div>
+      </div>
+    </div>
+    <div style="font-size: 26px; color: #8fb5ae; margin-top: 44px;">Every product name threads back through “Pure” to PuraKai itself — Pura means pure. Each rename makes the clean-living story clearer by one degree.</div>
+  </section>
+
+  <!-- SUPPLY CHAIN -->
+  <section data-label="Supply Chain" data-speaker-notes="The '10 miles in LA' shorthand. GOTS fiber from India; the All American Project pilots a fully domestic chain from Texas cotton, made in the Carolinas and Georgia." style="background: #14201f; color: #f0eee7; font-family: var(--sans); display: flex; flex-direction: column; padding: 100px 110px 80px;">
+    <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #8fb5ae; margin-bottom: 26px;">03 · The Supply Chain</div>
+    <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 70px;">From soil to seam.</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; flex: 1; align-content: center; margin-bottom: 50px;">
+      <div style="border-top: 2px solid #8fb5ae; padding-top: 26px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; color: #8fb5ae; font-weight: 700;">GROWN &amp; SPUN</div>
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">India.</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #c2c8bf;">GOTS-certified organic cotton, grown and spun where the certified supply-chain infrastructure exists.</div>
+      </div>
+      <div style="border-top: 2px solid #8fb5ae; padding-top: 26px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; color: #8fb5ae; font-weight: 700;">KNIT, CUT, SEWN, DYED</div>
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">10 miles of LA.</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #c2c8bf;">Finished within a 10-mile radius in Los Angeles, where US labor and environmental law applies. Garment-dyed and pre-shrunk.</div>
+      </div>
+      <div style="border-top: 2px solid #8fb5ae; padding-top: 26px; display: flex; flex-direction: column; gap: 14px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; color: #8fb5ae; font-weight: 700;">THE PILOT</div>
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">All American Project.</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #c2c8bf;">Texas-grown organic cotton, made in North Carolina, South Carolina, and Georgia — a 1,350-mile chain from seed to clothing.</div>
+      </div>
+    </div>
+    <div style="font-size: 26px; color: #8fb5ae; border-top: 1px solid #3a504c; padding-top: 28px;">Say “10 miles in LA” as supply-chain shorthand — never an unqualified “Made in USA.”</div>
+  </section>
+
+  <!-- 05 · PURE BASICS -->
+  <section data-label="Pure Basics" data-speaker-notes="Pure family — 100% organic cotton body fabric. All knit, cut, and sewn in LA. Texas-Grown pieces are the All American Project." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 90px 110px 70px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 44px;">
+      <div>
+        <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 20px;">04 · The Apparel — Pure</div>
+        <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1;">Pure Basics.</div>
+      </div>
+      <div style="font-size: 26px; color: #6b6a63;">100% GOTS-certified organic cotton · no spandex</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(6, 1fr); gap: 28px; flex: 1;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-01.jpg" alt="Classic Fit Tee" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Classic Fit Tee</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">The foundational crew neck, cut for all-day wear. $44</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-02.jpg" alt="All-Day Crop Tee" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">All-Day Crop Tee</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">Cropped to hit at the natural waist. $44</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-21.png" alt="Fleece Lightweight Joggers" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Fleece Lightweight Joggers</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">Relaxed cotton fleece, four colors. $79</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-22.png" alt="Lightweight Joggers" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Lightweight Joggers</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">Breathable relaxed fit in Sand Dune and Driftwood Grey. $79</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-12.png" alt="Tank Dress" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Texas-Grown Tank Dress</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">From the All American Project: US-grown cotton. $59</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-10.png" alt="Raglan Tee" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Texas-Grown Raglan Tee</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">Long-sleeve raglan in US-grown cotton. $42</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · PUREFLEX BOTTOMS -->
+  <section data-label="PureFlex Bottoms" data-speaker-notes="PureFlex bottoms — 14.8 oz single-layer construction. High-waist fit that stays put; non-sheer; moves with you." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 90px 110px 70px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 44px;">
+      <div>
+        <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 20px;">04 · The Apparel — PureFlex</div>
+        <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1;">Leggings, Shorts &amp; Joggers.</div>
+      </div>
+      <div style="font-size: 26px; color: #6b6a63;">92% organic cotton · 8% spandex · non-sheer</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(8, 1fr); gap: 22px; flex: 1;">
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-08.png" alt="High Waist Leggings" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 24px; font-weight: 700; line-height: 1.25;">High Waist Leggings</div>
+        <div style="font-size: 21px; color: #6b6a63; line-height: 1.4;">The flagship, in seven colors. $75</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-07.png" alt="Pocket Leggings" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 24px; font-weight: 700; line-height: 1.25;">Pocket Leggings</div>
+        <div style="font-size: 21px; color: #6b6a63; line-height: 1.4;">The same fit, with side pockets. $82</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-06.png" alt="Bootcut Leggings" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 24px; font-weight: 700; line-height: 1.25;">Bootcut Leggings</div>
+        <div style="font-size: 21px; color: #6b6a63; line-height: 1.4;">An open flare, studio to street. $78</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-05.png" alt="Capri Leggings" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 24px; font-weight: 700; line-height: 1.25;">Capri Leggings</div>
+        <div style="font-size: 21px; color: #6b6a63; line-height: 1.4;">Cropped length for warm days. $69</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-04.png" alt="Mid-Rise Leggings" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 24px; font-weight: 700; line-height: 1.25;">Mid-Rise Leggings</div>
+        <div style="font-size: 21px; color: #6b6a63; line-height: 1.4;">A lower rise, same stretch. $72</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-19.png" alt="High Waist Shorts" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 24px; font-weight: 700; line-height: 1.25;">High Waist Shorts</div>
+        <div style="font-size: 21px; color: #6b6a63; line-height: 1.4;">Stays put through movement. $55</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-17.png" alt="Pocket Shorts" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 24px; font-weight: 700; line-height: 1.25;">Pocket Shorts</div>
+        <div style="font-size: 21px; color: #6b6a63; line-height: 1.4;">Pockets for the essentials. $62</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-15.png" alt="EcoLuxe Joggers" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 24px; font-weight: 700; line-height: 1.25;">EcoLuxe Joggers</div>
+        <div style="font-size: 21px; color: #6b6a63; line-height: 1.4;">A tapered performance jogger. $79</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · PUREFLEX TOPS -->
+  <section data-label="PureFlex Tops" data-speaker-notes="PureFlex tops — 12.5 oz double-lined construction, light-to-medium support. The Athleisure Shirt is the exception: 100% organic cotton body fabric." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 90px 110px 70px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 44px;">
+      <div>
+        <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 20px;">04 · The Apparel — PureFlex</div>
+        <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1;">Bras, Camis &amp; Tops.</div>
+      </div>
+      <div style="font-size: 26px; color: #6b6a63;">Double-lined · light-to-medium support</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 28px; flex: 1;">
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-14.png" alt="Racerback Sports Bra" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Racerback Sports Bra</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">A second-skin fit with free shoulders. $62</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-11.jpg" alt="High Neck Racerback Bra" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">High Neck Racerback Bra</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">More coverage with the same stretch. $64</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-13.png" alt="Reversible Pivot Top" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Reversible Pivot Top</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">Fully reversible: two looks in one. $55</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-09.jpg" alt="Cami Crop Top" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Cami Crop Top</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">Layer it or wear it alone, in four colors. $58</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="background: #eae7de; flex: 1; overflow: hidden; display: flex;"><img src="assets/img/image-20.png" alt="Athleisure Shirt" style="width: 100%; height: 100%; object-fit: cover;"></div>
+        <div style="font-size: 25px; font-weight: 700; line-height: 1.3;">Athleisure Shirt</div>
+        <div style="font-size: 23px; color: #6b6a63; line-height: 1.4;">Relaxed fit; the one top in 100% organic cotton. $52</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 · FABRIC CARE -->
+  <section data-label="Fabric Care" data-speaker-notes="Garment dyeing means every piece is pre-shrunk and true to size. Natural fiber softens with wear — care keeps it that way. Always defer to the garment's own care label." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 90px 110px 70px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 44px;">
+      <div>
+        <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 20px;">04 · The Apparel — Care</div>
+        <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1;">Fabric care.</div>
+      </div>
+      <div style="font-size: 26px; color: #6b6a63;">General natural-fiber guidance — the care label always wins</div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 32px; flex: 1; align-content: center; margin-bottom: 44px;">
+      <div style="border-top: 2px solid #1c1c19; padding-top: 26px; display: flex; flex-direction: column; gap: 16px;">
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">Wash cold.</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #4a4943;">Machine wash cold on a gentle cycle, inside out, with like colors.</div>
+      </div>
+      <div style="border-top: 2px solid #1c1c19; padding-top: 26px; display: flex; flex-direction: column; gap: 16px;">
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">Skip the chemicals.</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #4a4943;">No bleach, no fabric softener — the fiber softens on its own with wear.</div>
+      </div>
+      <div style="border-top: 2px solid #1c1c19; padding-top: 26px; display: flex; flex-direction: column; gap: 16px;">
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">Dry low.</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #4a4943;">Line dry or tumble dry low. Garment dyeing means every piece is already pre-shrunk.</div>
+      </div>
+      <div style="border-top: 2px solid #1c1c19; padding-top: 26px; display: flex; flex-direction: column; gap: 16px;">
+        <div style="font-family: var(--serif); font-size: 40px; font-weight: 500;">Check the label.</div>
+        <div style="font-size: 26px; line-height: 1.5; color: #4a4943;">Each garment carries its own care instructions — the label is the source of truth.</div>
+      </div>
+    </div>
+    <div style="background: #14201f; color: #f0eee7; padding: 40px 52px; display: flex; gap: 48px; align-items: baseline;">
+      <div style="font-size: 22px; letter-spacing: 0.16em; text-transform: uppercase; color: #8fb5ae; white-space: nowrap;">End of life</div>
+      <div style="font-size: 26px; line-height: 1.55; color: #e6e4db;">Pure body fabric is biodegradable natural fiber — it begins and ends in the soil. PureFlex is 92% biodegradable; the spandex portion is not. Worn-out garments make good rags before they make compost.</div>
+    </div>
+  </section>
+
+  <!-- 08 · VOICE & GUARD RAILS -->
+  <section data-label="Voice &amp; Guard Rails" data-speaker-notes="Rule 01 is the one that matters most: 'organic cotton' is two words, always. Dropping the qualifier collapses the premise." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 100px 110px 80px;">
+    <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 26px;">05 · Voice &amp; Guard Rails</div>
+    <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 54px;">The two words travel together.</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1.2fr; gap: 40px; flex: 1;">
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #2b5f5c; font-weight: 700;">Say</div>
+        <div style="font-size: 28px; line-height: 1.45; border-bottom: 1px solid #d8d5cc; padding-bottom: 18px;">100% organic cotton <span style="color: #6b6a63;">(Pure)</span></div>
+        <div style="font-size: 28px; line-height: 1.45; border-bottom: 1px solid #d8d5cc; padding-bottom: 18px;">GOTS-certified organic cotton</div>
+        <div style="font-size: 28px; line-height: 1.45; border-bottom: 1px solid #d8d5cc; padding-bottom: 18px;">Mostly organic cotton <span style="color: #6b6a63;">(PureFlex)</span></div>
+        <div style="font-size: 28px; line-height: 1.45;">Organic cotton tee / jogger / legging</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 22px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #9a4a3a; font-weight: 700;">Never</div>
+        <div style="font-size: 28px; line-height: 1.45; border-bottom: 1px solid #d8d5cc; padding-bottom: 18px; color: #4a4943; text-decoration: line-through;">100% cotton</div>
+        <div style="font-size: 28px; line-height: 1.45; border-bottom: 1px solid #d8d5cc; padding-bottom: 18px; color: #4a4943; text-decoration: line-through;">Pure cotton</div>
+        <div style="font-size: 28px; line-height: 1.45; border-bottom: 1px solid #d8d5cc; padding-bottom: 18px; color: #4a4943; text-decoration: line-through;">Cotton tee / jogger / legging</div>
+        <div style="font-size: 28px; line-height: 1.45; color: #4a4943; text-decoration: line-through;">“Cotton” as a shorthand noun</div>
+      </div>
+      <div style="background: #14201f; color: #f0eee7; padding: 48px 52px; display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+        <div style="font-size: 22px; letter-spacing: 0.18em; text-transform: uppercase; color: #8fb5ae;">Voice</div>
+        <div style="font-size: 27px; line-height: 1.55; color: #e6e4db;">Lead with function — breathes, lives, stays pure — not lifestyle.</div>
+        <div style="font-size: 27px; line-height: 1.55; color: #e6e4db;">Name the contrast directly: microplastics, PFAS, heat trap, petroleum.</div>
+        <div style="font-size: 27px; line-height: 1.55; color: #e6e4db;">“10 miles in LA” as supply-chain shorthand — not “Made in USA.”</div>
+        <div style="font-size: 27px; line-height: 1.55; color: #e6e4db;">Never borrow from other languages or cultures.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 · CLAIMS -->
+  <section data-label="Claims" data-speaker-notes="Fiber is GOTS-certified; the finished garment is not, because LA cut-and-sew sits outside the GOTS chain. Be exact." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 100px 110px 80px;">
+    <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 26px;">05 · Voice &amp; Guard Rails</div>
+    <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1; margin-bottom: 54px;">Claims we can and can’t make.</div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; flex: 1;">
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #2b5f5c; font-weight: 700;">We can say</div>
+        <div style="font-size: 28px; line-height: 1.5; border-bottom: 1px solid #d8d5cc; padding-bottom: 20px;">Made from GOTS-certified organic cotton — certified at the fiber stage.</div>
+        <div style="font-size: 28px; line-height: 1.5; border-bottom: 1px solid #d8d5cc; padding-bottom: 20px;">Third-party tested PFAS-free (EPA-certified lab).</div>
+        <div style="font-size: 28px; line-height: 1.5; border-bottom: 1px solid #d8d5cc; padding-bottom: 20px;">Knit, cut, sewn, and dyed within a 10-mile radius in Los Angeles.</div>
+        <div style="font-size: 28px; line-height: 1.5;">Biodegradable natural fiber (Pure) · dramatically reduced microplastic shedding (PureFlex).</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div style="font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #9a4a3a; font-weight: 700;">We can’t say</div>
+        <div style="font-size: 28px; line-height: 1.5; border-bottom: 1px solid #d8d5cc; padding-bottom: 20px; color: #4a4943;">“100% natural” for PureFlex — the spandex is synthetic.</div>
+        <div style="font-size: 28px; line-height: 1.5; border-bottom: 1px solid #d8d5cc; padding-bottom: 20px; color: #4a4943;">“Zero microplastics” for PureFlex — the spandex portion still sheds.</div>
+        <div style="font-size: 28px; line-height: 1.5; border-bottom: 1px solid #d8d5cc; padding-bottom: 20px; color: #4a4943;">“Plastic-free” for Pure — labels and waistband elastic aren’t cotton.</div>
+        <div style="font-size: 28px; line-height: 1.5; color: #4a4943;">“Made in USA” unqualified — specify the 10-mile finishing footprint.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · LOGO ASSETS -->
+  <section data-label="Logo Assets" data-speaker-notes="Working asset station: both logos are transparent PNGs. Pick a pixel width with the slider, then copy the image straight to the clipboard, copy the URL, or download the file." style="background: #f7f5f0; color: #1c1c19; font-family: var(--sans); display: flex; flex-direction: column; padding: 90px 110px 70px;">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 44px;">
+      <div>
+        <div style="font-size: 24px; letter-spacing: 0.18em; text-transform: uppercase; color: #2b5f5c; margin-bottom: 20px;">06 · Logo Assets</div>
+        <div style="font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1.1;">Grab the mark.</div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; background: #ffffff; border: 1px solid #d8d5cc; padding: 20px 32px;">
+        <div style="display: flex; align-items: center; gap: 24px;">
+          <div style="font-size: 24px; font-weight: 700; white-space: nowrap;">Export size</div>
+          <input type="range" min="200" max="2400" step="50" value="{{ logoW }}" onchange="{{ onSizeInput }}" style="width: 260px; accentColor: #2b5f5c; cursor: pointer;">
+          <input type="number" min="50" max="2400" value="{{ logoW }}" onchange="{{ onSizeType }}" style="font-family: monospace; font-size: 24px; color: #2b5f5c; width: 110px; padding: 8px 10px; border: 1px solid #d8d5cc; background: #f7f5f0; text-align: right;">
+          <div style="font-size: 24px; color: #6b6a63;">px wide</div>
+        </div>
+        <div style="font-size: 21px; color: #6b6a63;">Sets the pixel width of every Copy and Download below — the previews don't change.</div>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 24px; flex: 1; min-height: 0;">
+      <sc-for list="{{ logos }}" as="logo" hint-placeholder-count="4">
+        <div style="display: flex; flex-direction: column; border: 1px solid #d8d5cc; min-height: 0;">
+          <div style="flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; background: {{ logo.checker }}; padding: 24px;">
+            <img src="{{ logo.file }}" alt="{{ logo.label }}" style="max-width: {{ logo.wpct }}; max-height: 78%; object-fit: contain;">
+          </div>
+          <div style="background: #ffffff; border-top: 1px solid #d8d5cc; padding: 16px 24px; display: flex; gap: 16px; align-items: center;">
+            <div style="min-width: 0;">
+              <div style="font-size: 24px; font-weight: 700; white-space: nowrap;">{{ logo.label }}</div>
+              <div style="font-family: monospace; font-size: 20px; color: #6b6a63; white-space: nowrap;">transparent PNG · {{ logo.dims }}</div>
+            </div>
+            <div style="font-size: 21px; color: #2b5f5c; margin-left: auto; white-space: nowrap;">{{ logo.msg }}</div>
+            <button onclick="{{ logo.copy }}" style="font-family: var(--sans); font-size: 21px; font-weight: 700; background: #2b5f5c; color: #f7f5f0; border: none; padding: 12px 22px; cursor: pointer; white-space: nowrap;">Copy image</button>
+            <button onclick="{{ logo.dl }}" style="font-family: var(--sans); font-size: 21px; background: transparent; color: #2b5f5c; border: 1px solid #2b5f5c; padding: 11px 22px; cursor: pointer; white-space: nowrap;">Download</button>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="font-size: 24px; color: #6b6a63; margin-top: 28px;">All four cut from the same 2400px transparent master. Black on light backgrounds, white on dark; no outlines, recolors, or effects.</div>
+  </section>
+
+  <!-- 10 · CLOSE -->
+  <section data-label="Close" data-speaker-notes="Everything in this book works only if the garment works. Write like the fabric: plain, functional, close to the source." style="background: #14201f; color: #f0eee7; font-family: var(--sans); display: flex; flex-direction: column; justify-content: space-between; padding: 90px 110px 70px;">
+    <img src="assets/img/image-18.png" alt="PuraKai" style="height: 50px; object-fit: contain; align-self: flex-start;">
+    <div>
+      <div style="font-family: var(--serif); font-size: 110px; line-height: 1.08; font-weight: 500; max-width: 1300px;">Made by Nature since 2012.</div>
+      <div style="font-size: 32px; line-height: 1.55; color: #c2c8bf; margin-top: 44px; max-width: 1050px;">Everything in this book works only if the garment works. Write like the fabric — plain, functional, close to the source.</div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: baseline; border-top: 1px solid #3a504c; padding-top: 28px;">
+      <div style="font-family: var(--serif); font-size: 32px; font-style: italic; color: #8fb5ae;">Live Pure. Wear Pure.</div>
+      <div style="font-size: 22px; letter-spacing: 0.14em; text-transform: uppercase; color: #8fb5ae;">purakai.com · @purakai</div>
+    </div>
+  </section>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;footnoteStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;subtle&quot;,&quot;emphasized&quot;],&quot;default&quot;:&quot;subtle&quot;,&quot;tsType&quot;:&quot;'subtle' | 'emphasized'&quot;,&quot;section&quot;:&quot;Core Contrast slide&quot;}}">
+class Component extends DCLogic {
+  state = { logoW: 600, msgs: {} };
+
+  static LOGOS = [
+    { key: 'lockup-black', label: 'Full lockup — black', file: (window.__resources && window.__resources.logoBlack) || 'assets/logo-black.png', ratio: 1796 / 2400, dark: false },
+    { key: 'lockup-white', label: 'Full lockup — white', file: (window.__resources && window.__resources.logoWhite) || 'assets/logo-white.png', ratio: 1796 / 2400, dark: true },
+    { key: 'wordmark-black', label: 'Wordmark — black', file: (window.__resources && window.__resources.wordmarkBlack) || 'assets/wordmark-black.png', ratio: 878 / 2400, dark: false },
+    { key: 'wordmark-white', label: 'Wordmark — white', file: (window.__resources && window.__resources.wordmarkWhite) || 'assets/wordmark-white.png', ratio: 878 / 2400, dark: true },
+  ];
+
+  logoUrl(kind) {
+    return Component.LOGOS.find(l => l.key === kind).file;
+  }
+
+  makePng(kind, w) {
+    return new Promise((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => {
+        const c = document.createElement('canvas');
+        c.width = w;
+        c.height = Math.round(w * img.naturalHeight / img.naturalWidth);
+        c.getContext('2d').drawImage(img, 0, 0, c.width, c.height);
+        c.toBlob(b => b ? resolve(b) : reject(new Error('toBlob failed')), 'image/png');
+      };
+      img.onerror = reject;
+      img.src = this.logoUrl(kind);
+    });
+  }
+
+  async downloadPng(kind) {
+    try {
+      const w = this.state.logoW;
+      const blob = await this.makePng(kind, w);
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'purakai-' + kind + '-' + w + 'px.png';
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+      this.flash(kind, 'Downloaded ✓');
+    } catch (e) {
+      this.flash(kind, 'Download failed');
+    }
+  }
+
+  flash(kind, msg) {
+    this.setState(s => ({ msgs: { ...s.msgs, [kind]: msg } }));
+    clearTimeout(this['_t_' + kind]);
+    this['_t_' + kind] = setTimeout(() => this.setState(s => ({ msgs: { ...s.msgs, [kind]: '' } })), 2500);
+  }
+
+  async copyImage(kind) {
+    try {
+      const item = new ClipboardItem({ 'image/png': this.makePng(kind, this.state.logoW) });
+      await navigator.clipboard.write([item]);
+      this.flash(kind, 'Image copied ✓');
+    } catch (e) {
+      this.flash(kind, 'Copy blocked — use Download');
+    }
+  }
+
+  renderVals() {
+    const style = this.props.footnoteStyle ?? 'subtle';
+    const w = this.state.logoW;
+    return {
+      footnoteSubtle: style === 'subtle',
+      footnoteEmphasized: style === 'emphasized',
+      logoW: w,
+      onSizeInput: (e) => this.setState({ logoW: Number(e.target.value) }),
+      onSizeType: (e) => {
+        const v = Math.round(Number(e.target.value));
+        if (Number.isFinite(v)) this.setState({ logoW: Math.max(50, Math.min(2400, v)) });
+      },
+      logos: Component.LOGOS.map(l => ({
+        ...l,
+        dims: w + ' × ' + Math.round(w * l.ratio) + ' px',
+        wpct: l.key.indexOf('wordmark') === 0 ? '52%' : '30%',
+        checker: l.dark
+          ? 'repeating-conic-gradient(#1d2e2c 0% 25%, #14201f 0% 50%) 0 0 / 32px 32px'
+          : 'repeating-conic-gradient(#e6e3da 0% 25%, #ffffff 0% 50%) 0 0 / 32px 32px',
+        msg: this.state.msgs[l.key] || '',
+        copy: () => this.copyImage(l.key),
+        dl: () => this.downloadPng(l.key),
+      })),
+    };
+  }
+}
+</script>
+
+
+</body></html>
